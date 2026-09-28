@@ -1,0 +1,6 @@
+{
+  "name": "NOVA PLAY - Vintage Toy Catalogue",
+  "description": "Awesome toys, serious fun. A vibrant 1980s retro toy catalogue store inspired by classic catalogue spreads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

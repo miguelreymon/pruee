@@ -1,0 +1,377 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #ebe8de;
+    color: #0f172a;
+  }
+}
+
+.font-display {
+  font-family: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-creep {
+  font-family: 'Creepster', cursive;
+  letter-spacing: 0.04em;
+}
+
+.font-marker {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.font-slab {
+  font-family: 'Alfa Slab One', serif;
+  letter-spacing: -0.01em;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-bungee {
+  font-family: 'Bungee', cursive;
+  letter-spacing: -0.02em;
+}
+
+.font-mono-code {
+  font-family: 'Space Mono', monospace;
+}
+
+.font-condensed {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* HoopsPulse Comic Buttons & Badges */
+.btn-comic-burst {
+  background: #dc2626;
+  color: #ffffff;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0 #000000;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: all 0.08s ease-in-out;
+}
+.btn-comic-burst:hover {
+  background: #ef4444;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 4px 4px 0 #000000;
+}
+.btn-comic-burst:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 1px 1px 0 #000000;
+}
+
+.btn-comic-blue {
+  background: #0284c7;
+  color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0 #000000;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: all 0.08s ease-in-out;
+}
+.btn-comic-blue:hover {
+  background: #0ea5e9;
+  transform: translateY(-1px);
+  box-shadow: 3px 3px 0 #000000;
+}
+.btn-comic-blue:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 #000000;
+}
+
+.btn-comic-yellow {
+  background: #facc15;
+  color: #000000;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0 #000000;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: all 0.08s ease-in-out;
+}
+.btn-comic-yellow:hover {
+  background: #fde047;
+  transform: translateY(-1px);
+  box-shadow: 3px 3px 0 #000000;
+}
+.btn-comic-yellow:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 #000000;
+}
+
+/* Comic Tactile Cards with Bouncy Springs & Movement */
+.comic-interactive-card {
+  transition: transform 0.16s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.16s ease-out;
+  cursor: pointer;
+}
+.comic-interactive-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 6px 6px 0 #000000 !important;
+}
+.comic-interactive-card:active {
+  transform: translateY(2px) scale(0.99);
+  box-shadow: 1px 1px 0 #000000 !important;
+}
+
+@keyframes comic-bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.animate-comic-bounce {
+  animation: comic-bounce-subtle 2s ease-in-out infinite;
+}
+
+/* Comic 3D Extruded Text Styles */
+.comic-text-3d-blue {
+  color: #0284c7;
+  text-shadow: 
+    1px 1px 0 #000,
+    2px 2px 0 #000,
+    3px 3px 0 #000,
+    4px 4px 0 #000;
+}
+
+.comic-text-3d-orange {
+  color: #ff4d00;
+  text-shadow: 
+    1px 1px 0 #000,
+    2px 2px 0 #000,
+    3px 3px 0 #000,
+    4px 4px 0 #000;
+}
+
+/* Wax pack vintage buttons */
+.btn-wax-blue {
+  background-color: #12376e;
+  color: #ffffff;
+  font-weight: 800;
+  border: 2px solid #0a2247;
+  box-shadow: 0 3px 0 #0a2247;
+  transition: all 0.08s ease-in-out;
+}
+.btn-wax-blue:hover {
+  background-color: #184587;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 #0a2247;
+}
+.btn-wax-blue:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 #0a2247;
+}
+
+/* Hyper-realistic Cardboard & Paper Textures for Wax Pack Club */
+.texture-paper-pulp {
+  background-image: url('/src/assets/images/wax_paper_pulp_texture_1790615779841.jpg');
+  background-repeat: repeat;
+  background-size: 320px 320px;
+}
+
+.card-stack-depth {
+  box-shadow: 
+    1px 1px 0 #ded7cb,
+    2px 2px 0 #c7bea0,
+    3px 3px 0 #b3a98f,
+    4px 4px 0 #9c9176,
+    5px 5px 0 #857b60,
+    8px 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.card-back-chipboard {
+  background-color: #eae3d2;
+  background-image: 
+    radial-gradient(#c4bba7 0.75px, transparent 0.75px),
+    radial-gradient(#b8ad96 0.75px, #eae3d2 0.75px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.gold-foil-rookie {
+  background: linear-gradient(135deg, #c59b27 0%, #e8c85a 45%, #ffd700 55%, #b38618 100%);
+  color: #1a1a1a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.wax-headline-letterpress {
+  color: #113568;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.btn-wax-red {
+  background-color: #b91c1c;
+  color: #ffffff;
+  font-weight: 800;
+  border: 2px solid #7f1d1d;
+  box-shadow: 0 3px 0 #7f1d1d;
+  transition: all 0.08s ease-in-out;
+}
+.btn-wax-red:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 #7f1d1d;
+}
+.btn-wax-red:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 #7f1d1d;
+}
+
+.card-wax-stack {
+  box-shadow: 
+    3px 3px 0px #cfc6b6,
+    6px 6px 0px #b8ad9b,
+    9px 9px 0px #a19582,
+    14px 18px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Lowbrow flame button & neon pill effects */
+.btn-lowbrow-purple {
+  background: linear-gradient(180deg, #6c2bd9 0%, #4c1d95 100%);
+  color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 0 #000000;
+  transition: all 0.08s ease-in-out;
+}
+.btn-lowbrow-purple:hover {
+  background: linear-gradient(180deg, #7c3aed 0%, #5b21b6 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #000000;
+}
+.btn-lowbrow-purple:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #000000;
+}
+
+.btn-lowbrow-teal {
+  background: linear-gradient(180deg, #0d9488 0%, #115e59 100%);
+  color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 0 #000000;
+  transition: all 0.08s ease-in-out;
+}
+.btn-lowbrow-teal:hover {
+  background: linear-gradient(180deg, #14b8a6 0%, #0f766e 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #000000;
+}
+.btn-lowbrow-teal:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #000000;
+}
+
+.btn-lowbrow-cult {
+  background: #ff5500;
+  color: #000;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 0 #000000;
+  transition: all 0.08s ease-in-out;
+}
+.btn-lowbrow-cult:hover {
+  background: #ff6a00;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 5px 0 #000000;
+}
+.btn-lowbrow-cult:active {
+  transform: translateY(3px) scale(0.98);
+  box-shadow: 0 1px 0 #000000;
+}
+
+/* Tactile 3D retro button effect */
+.btn-retro-yellow {
+  background-color: #ffdf00;
+  color: #000000;
+  font-weight: 800;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 0 #000000;
+  transition: all 0.08s ease-in-out;
+}
+.btn-retro-yellow:hover {
+  background-color: #ffe62b;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #000000;
+}
+.btn-retro-yellow:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #000000;
+}
+
+.btn-retro-blue {
+  background-color: #0640b5;
+  color: #ffffff;
+  font-weight: 800;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 0 #000000;
+  transition: all 0.08s ease-in-out;
+}
+.btn-retro-blue:hover {
+  background-color: #0c4ed4;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #000000;
+}
+.btn-retro-blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #000000;
+}
+
+.btn-retro-white {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  border: 2px solid #000000;
+  box-shadow: 0 3px 0 #000000;
+  transition: all 0.08s ease-in-out;
+}
+.btn-retro-white:hover {
+  background-color: #f7f6f0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 #000000;
+}
+.btn-retro-white:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 #000000;
+}
+
+.btn-retro-red {
+  background-color: #de1f27;
+  color: #ffffff;
+  font-weight: 800;
+  border: 2px solid #000000;
+  box-shadow: 0 3px 0 #000000;
+  transition: all 0.08s ease-in-out;
+}
+.btn-retro-red:hover {
+  background-color: #eb2830;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 #000000;
+}
+.btn-retro-red:active {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 #000000;
+}
+
+/* Starburst animation on hover */
+@keyframes starburst-wobble {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.04) rotate(-2deg); }
+  75% { transform: scale(1.04) rotate(2deg); }
+}
+
+.starburst-badge {
+  filter: drop-shadow(2px 3px 0px rgba(0,0,0,0.9));
+  transition: transform 0.15s ease-out;
+}
+.starburst-badge:hover {
+  transform: scale(1.06) rotate(-1deg);
+}
+
+/* Halftone dot pattern for catalogue texture */
+.retro-halftone {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 0);
+  background-size: 8px 8px;
+}
